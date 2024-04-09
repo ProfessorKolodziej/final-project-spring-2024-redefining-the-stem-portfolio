@@ -27,9 +27,30 @@ h1 {
 }
 
 /* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
+@media screen and (width >=320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
 	}
+}
+
+.jon-headshot-nav {
+	width: 15%;
+}
+
+.jon-headshot-links {
+	width: 50%;
+}
+
+.cocktail-1 {
+	width: 50%;
+
+}
+
+.cocktail-2 {
+	width: 50%;
+}
+
+.travel-1 {
+	width: 50%;
 }
