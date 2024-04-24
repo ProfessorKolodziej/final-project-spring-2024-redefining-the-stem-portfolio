@@ -8,44 +8,54 @@
 	<meta name="description" content="Update your description here" />
 	<title>About - Jonathan Lu</title>
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<nav>
-		<img class="jon-headshot-nav" src="images/jonheadshot.png" alt="Headshot">
-		<ul>
-			<li>Jonathan Lu</li>
-			<li><a href="index.html" class="active">About</a></li>
+	<nav class="blue-box">
+		<a href="index.html"><img class="jon-headshot-nav" src="images/jonheadshot.png" alt="Headshot"></a>
+		<p class="nav-jonathan">Jonathan Lu</p>
+		<div class="line-nav"></div>
+		<div class="dot-nav-about"></div>
+		<ul class="nav-bar-text">
+			<li class="current-page"><a href="index.html" class="active">About</a></li>
 			<li><a href="research.html">Research</a></li>
 			<li><a href="notresearch.html">Not Research</a></li>
-			<li><a href="teleportation.html">Quantum Teleportation</a></li>
 		</ul>
 	</nav>
 
-	<aside>
 		<img class="jon-headshot-links" src="images/jonheadshot.png" alt="Headshot">
-		<ul>
-			<li>Short Resume</li>
-			<li>Long CV</li>
-			<li>Github</li>
-			<li>Linkedin</li>
-		</ul>
-	</aside>
+		<div class="all-links">
+		<div class="line-resume"></div>
+			<p class="short-resume"><a href="https://drive.google.com/file/d/1GOeN0l1g0jgOK02fqNLR_EH558xkMXlJ/view">Short Resume</a></p>
+			<div class="line-cv"></div>
+			<p class="long-cv"><a href="https://drive.google.com/file/d/17jKGimKseIQRbreZ-T34dgc3qVhfm2gp/view">Long CV</a></p>
+			<div class="line-github"></div>
+			<p class="github"><a href="https://github.com/jz-lu?fbclid=IwAR3cK-nOESPikPAG6SnCQB3cBjcwSxo4CTvbPwRhXdReiSGxAS6Su3tNzxM">Github</a></p>
+			<div class="line-linkedin"></div>
+			<p class="linkedin"><a href="https://www.linkedin.com/in/jonathanlu/">Linkedin</a></p>
+		</div>
 
-	<p>I am a Ph.D. student under the NDSEG fellowship at MIT Mathematics. Previously, I earned my A.B. in Physics and
+
+
+	<p class="about-desc">I am a Ph.D. student under the NDSEG fellowship at MIT Mathematics. Previously, I earned my A.B. in Physics and
 		Mathematics at Harvard University.
+	</p>
+
+	<p class="about-desc">
 		Broadly, I work in the theory of quantum information relevant to both the near and far term. In the near term, I
-		am interested in quantum machine
-		learning and, more generally, quantum algorithms for computation and communication. In the far term, I am
-		interested in quantum complexity theory
-		and its connections to quantum physics, such as black hole radiation. Outside of research, I enjoy creating
-		inventive cocktails, hiking, biking, and traveling.
+		am interested in quantum machine learning and, more generally, quantum algorithms for computation and communication. In the far term, I am
+		interested in quantum complexity theory and its connections to quantum physics, such as black hole radiation.
+	</p>
+
+	<p class="about-desc">
+		Outside of research, I enjoy creating inventive cocktails, hiking, biking, and traveling.
 		You can see some of these in action on my interests page.
 	</p>
-	<!--
-		This is where you should link your JS file.
-	-->
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
