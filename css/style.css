@@ -121,6 +121,7 @@ a:link {
 	top: -230px;
 	left: 20px;
 	width: 200px;
+	font-size: 16px;
 }
 
 .line-resume {
@@ -137,6 +138,7 @@ a:link {
 	top: -275px;
 	left: 260px;
 	width: 80px;
+	font-size: 16px;
 }
 
 .line-cv {
@@ -153,6 +155,7 @@ a:link {
 	top: -100px;
 	left: 20px;
 	width: 200px;
+	font-size: 16px;
 }
 
 .line-github {
@@ -169,6 +172,7 @@ a:link {
 	top: -145px;
 	left: 260px;
 	width: 80px;
+	font-size: 16px;
 }
 
 .line-linkedin {
@@ -200,10 +204,9 @@ a:link {
 }
 
 /*accordion*/
-/* ask: how can I make my accordion underline be under
-the title and be black once expanded?*/
+
 .research-accordion {
-	max-width: 300px;
+	max-width: 90%;
 	margin: 0 auto;
 	position: relative;
 	top: 130px;
@@ -219,24 +222,24 @@ the title and be black once expanded?*/
 }
 
 .accordion-header {
-  display:flex;
-  flex-direction: row-reverse;
-  cursor: pointer;
+	display: flex;
+	flex-direction: row-reverse;
+	cursor: pointer;
 }
 
 .accordion-title {
 	flex: 1;
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: 700;
 	margin: 10px;
-	margin-left: 2px;
+	margin-left: 10px;
 }
 
 .arrow-up {
-	width: 8%;
-	height: 8%;
+	width: 6%;
+	height: 6%;
 	position: relative;
-	top: 12px;
+	top: 14px;
 	transform: rotate(-48deg);
 	transition: transform 0.3s;
 }
@@ -251,7 +254,7 @@ the title and be black once expanded?*/
 	background-color: white;
 }
 
-/* research section slider*/
+/* research carousel*/
 
 .areas-research-carousel {
 	width: 100%;
@@ -268,7 +271,6 @@ the title and be black once expanded?*/
 
 .research-slide {
 	flex: 0 0 100%;
-	text-align: left;
 	padding: 10px;
 	background-color: white;
 	opacity: 0.5;
@@ -280,13 +282,14 @@ the title and be black once expanded?*/
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    background-color: transparent;
-    border: 2px solid #68BDDC;
-	 width: 230px;
-	 height: 230px;
-	 border-radius: 50%;
-	 position: relative;
-	 left: 20px;
+	background-color: transparent;
+	border: 2px solid #68BDDC;
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	position: relative;
+	left: 40px;
+	font-size: 25px;
 }
 
 
@@ -310,7 +313,7 @@ button {
 	border: none;
 	padding: 10px;
 	cursor: pointer;
-	font-size: 26px;
+	font-size: 60px;
 }
 
 #prev {
@@ -318,9 +321,28 @@ button {
 }
 
 #next {
-	right: 1px;
+	right: -6px;
 }
 
+.content ol {
+	list-style: none;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.content {
+	padding: 10px;
+}
+
+.content h3 {
+	width: 220px;
+	font-size: 16px;
+}
+
+.content p {
+	padding: 10px;
+	font-size: 16px;
+}
 
 /* not research section: ask why do I have to reload for each media query
 to get the right dimensions for slider.*/
@@ -341,6 +363,7 @@ to get the right dimensions for slider.*/
 	position: relative;
 	top: 100px;
 	left: 8px;
+	width: 300px;
 }
 
 .cocktails-underline {
@@ -360,10 +383,10 @@ to get the right dimensions for slider.*/
 
 .cocktail-1 {
 	width: 80%;
-	margin-left: 35px;
-	margin-top: 80px;
+	margin-top: 60px;
 	position: relative;
 	top: 80px;
+	left: 35px;
 }
 
 .cocktail-2 {
@@ -380,6 +403,7 @@ to get the right dimensions for slider.*/
 	position: relative;
 	top: 90px;
 	left: 8px;
+	width: 300px;
 }
 
 .travel-underline {
@@ -392,32 +416,35 @@ to get the right dimensions for slider.*/
 
 .travel-paragraph {
 	position: relative;
-	top: 70px;
+	top: 90px;
 	margin: 10px;
+	width: 320px;
+	font-size: 16px;
 }
 
 .not-research-travel-wrapper {
 	position: relative;
-	max-width: 90%;
+	max-width: 70%;
 	overflow: hidden;
-	left: 20px;
-	top: 80px;
+	left: 50px;
+	top: 85px;
 
- }
 
- .not-research-travel-pics {
+}
+
+.not-research-travel-pics {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
- }
+}
 
- .travel-pic {
+.travel-pic {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
- }
+}
 
- .prev-btn-travel,
- .next-btn-travel {
+.prev-btn-travel,
+.next-btn-travel {
 	position: relative;
 	top: -80px;
 	transform: translateY(-50%);
@@ -426,18 +453,14 @@ to get the right dimensions for slider.*/
 	background: none;
 	outline: none;
 	cursor: pointer;
-	padding: 10px 20px;
+	padding: 10px;
 	z-index: 2;
-	font-size: 30px;
- }
+	font-size: 60px;
+}
 
- .prev-btn-travel {
-	left: -15px;
- }
-
- .next-btn-travel {
-	right: -285px;
- }
+.next-btn-travel {
+	right: -280px;
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -467,9 +490,8 @@ to get the right dimensions for slider.*/
 	}
 
 	.nav-bar-text li {
-		font-size: 26px;
+		font-size: 24px;
 		width: 80%;
-		font-size: 20px;
 	}
 
 	.line-nav {
@@ -489,11 +511,11 @@ to get the right dimensions for slider.*/
 	}
 
 	.about-desc {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	.all-links {
-		top: 600px;
+		top: 580px;
 		left: 20px;
 	}
 
@@ -504,6 +526,7 @@ to get the right dimensions for slider.*/
 	.short-resume {
 		top: -450px;
 		left: 50px;
+		font-size: 24px;
 	}
 
 	.line-resume {
@@ -513,32 +536,36 @@ to get the right dimensions for slider.*/
 
 	.long-cv {
 		top: -510px;
-		left: 600px;
+		left: 540px;
+		font-size: 24px;
+		width: 120px;
 	}
 
 	.line-cv {
 		top: -430px;
-		left: 550px;
+		left: 530px;
 	}
 
 	.github {
 		left: 100px;
-		top: -180px;
+		top: -240px;
+		font-size: 24px;
 	}
 
 	.line-github {
-		top: -195px;
+		top: -230px;
 		left: 150px;
 	}
 
 	.linkedin {
-		top: -220px;
-		left: 550px;
+		top: -320px;
+		left: 500px;
+		font-size: 24px;
 	}
 
 	.line-linkedin {
-		top: -250px;
-		left: 550px;
+		top: -320px;
+		left: 500px;
 	}
 
 
@@ -550,42 +577,54 @@ to get the right dimensions for slider.*/
 		left: 435px;
 		top: -55px;
 	}
+
 	.research-accordion {
-		max-width: 700px;
+		max-width: 90%;
 		top: 180px;
 	}
 
 	.accordion-title {
 		font-size: 30px;
-		margin: 10px;
 	}
 
 	.arrow-up {
-		width: 5%;
-		height: 5%;
+		width: 3%;
+		height: 3%;
+		top: 15px;
 	}
-/* research carousel */
 
-.not-research-travel-wrapper {
-	left: 75px;
-	top: -50px;
-	max-width: 80%;
-}
-.prev-btn-travel,
-.next-btn-travel {
-	font-size: 50px;
-	top: -500px;
+	/* research carousel */
 
-}
+	.research-slide h2 {
+		left: 170px;
+		width: 250px;
+		height: 250px;
+		font-size: 26px;
+	}
 
-.prev-btn-travel {
-	left: 10px;
-}
-.next-btn-travel {
-	right: -630px;
-}
+	.content ol,
+	.content p {
+		font-size: 24px;
+	}
+
+	.content h3 {
+		font-size: 24px;
+		width: 600px;
+	}
 
 
+	button {
+		top: 13%;
+		font-size: 140px;
+	}
+
+	#prev {
+		left: 40px;
+	}
+
+	#next {
+		right: 40px;
+	}
 
 	/*not research section */
 	.dot-nav-not-research {
@@ -596,7 +635,7 @@ to get the right dimensions for slider.*/
 	}
 
 	.cocktail-title {
-		font-size: 40px;
+		font-size: 30px;
 		margin-left: 20px;
 		top: 120px;
 		width: 300px;
@@ -613,7 +652,7 @@ to get the right dimensions for slider.*/
 		margin: 10px;
 		width: 450px;
 		height: 200px;
-		font-size: 26px;
+		font-size: 24px;
 		left: 270px;
 		top: 10px;
 	}
@@ -635,7 +674,7 @@ to get the right dimensions for slider.*/
 	}
 
 	.travel-title {
-		font-size: 40px;
+		font-size: 30px;
 		font-style: bold;
 		margin-left: 20px;
 		position: relative;
@@ -646,18 +685,38 @@ to get the right dimensions for slider.*/
 	.travel-underline {
 		width: 80px;
 		transform: rotate(90deg);
-		top: -150px;
+		top: -140px;
 		left: 120px;
 	}
 
 	.travel-paragraph {
 		width: 500px;
-		font-size: 26px;
+		font-size: 24px;
 		top: -100px;
 		left: 180px;
 		margin: 10px;
 	}
 
+	.not-research-travel-wrapper {
+		left: 160px;
+		top: 20px;
+		max-width: 60%;
+	}
+
+	.prev-btn-travel,
+	.next-btn-travel {
+		font-size: 140px;
+		top: -300px;
+
+	}
+
+	.prev-btn-travel {
+		left: 10px;
+	}
+
+	.next-btn-travel {
+		right: -610px;
+	}
 
 }
 
@@ -695,7 +754,6 @@ and why isn't a larger query working?*/
 	.nav-bar-text li {
 		font-size: 26px;
 		width: 80%;
-		font-size: 30px;
 		padding-bottom: 50px;
 		text-align: left;
 	}
@@ -720,7 +778,7 @@ and why isn't a larger query working?*/
 		position: relative;
 		top: -1600px;
 		padding-left: 280px;
-		font-size: 30px;
+		font-size: 26px;
 	}
 
 	.jon-headshot-links {
@@ -735,7 +793,7 @@ and why isn't a larger query working?*/
 	}
 
 	.short-resume {
-		font-size: 30px;
+		font-size: 26px;
 		width: 300px;
 		left: -280px;
 		top: -210px;
@@ -748,7 +806,7 @@ and why isn't a larger query working?*/
 	}
 
 	.long-cv {
-		font-size: 30px;
+		font-size: 26px;
 		width: 300px;
 		top: -320px;
 	}
@@ -759,7 +817,7 @@ and why isn't a larger query working?*/
 	}
 
 	.github {
-		font-size: 30px;
+		font-size: 26px;
 		top: -28px;
 		left: -210px;
 	}
@@ -771,7 +829,7 @@ and why isn't a larger query working?*/
 	}
 
 	.linkedin {
-		font-size: 30px;
+		font-size: 26px;
 	}
 
 	.line-linkedin {
@@ -781,37 +839,74 @@ and why isn't a larger query working?*/
 	.about-desc {
 		top: 20px;
 	}
-/*research section */
+
+	/*research section */
 
 	.dot-nav-research {
-	width: 12px;
-	height: 12px;
-	left: 25px;
-	top: 210px;
+		width: 12px;
+		height: 12px;
+		left: 25px;
+		top: 200px;
 	}
-/*accordion */
+
+	/*accordion */
 
 	.research-accordion {
-		max-width: 1000px;
+		max-width: 60%;
 		left: 110px;
 		top: 80px;
-		}
+	}
 
 	.accordion-title {
-		font-size: 40px;
-		margin: 10px;
-		}
+		font-size: 34px;
+		margin-left: 20px;
+	}
 
 	.arrow-up {
-		width: 5%;
-		height: 5%;
+		width: 3%;
+		height: 3%;
+		top: 25px;
 	}
+
+	/* Research carousel */
+	.research-slide h2 {
+		left: 150px;
+		width: 300px;
+		height: 300px;
+		font-size: 30px;
+	}
+
+	.content ol,
+	.content p {
+		font-size: 26px;
+		width: 600px;
+	}
+
+	.content h3 {
+		font-size: 26px;
+		width: 600px;
+	}
+
+	button {
+
+		top: 12%;
+		font-size: 150px;
+	}
+
+	#prev {
+		left: 140px;
+	}
+
+	#next {
+		right: 140px;
+	}
+
 	/*not research section */
 
 	.dot-nav-not-research {
 		width: 12px;
 		height: 12px;
-		top: 300px;
+		top: 285px;
 		left: 24px;
 	}
 
@@ -822,23 +917,25 @@ and why isn't a larger query working?*/
 	}
 
 	.cocktail-title {
-		font-size: 60px;
+		font-size: 34px;
 		margin-left: 100px;
+		top: 60px;
+
 	}
 
 	.cocktails-underline {
 		width: 80px;
 		transform: rotate(90deg);
 		top: 10px;
-		left: 380px;
+		left: 240px;
 	}
 
 	.cocktails-paragraph {
 		margin: 10px;
-		width: 530px;
+		width: 550px;
 		height: 200px;
-		font-size: 30px;
-		left: 450px;
+		font-size: 26px;
+		left: 290px;
 		top: -50px;
 	}
 
@@ -846,65 +943,62 @@ and why isn't a larger query working?*/
 		width: 32%;
 		top: -100px;
 		margin: 20px;
-		left: 50px;
+		left: 70px;
 	}
 
 	.cocktail-2 {
 		width: 35%;
 		top: -100px;
 		margin: 20px;
-		left: 30px;
+		left: 50px;
 	}
 
 
 	.travel-title {
-		font-size: 60px;
+		font-size: 30px;
 		font-style: bold;
 		margin-left: 100px;
 		position: relative;
-		top: -100px;
-		left: 260px;
+		top: -70px;
+		left: 290px;
 	}
 
 	.travel-underline {
 		width: 80px;
 		transform: rotate(90deg);
-		top: -260px;
-		left: 520px;
+		top: -200px;
+		left: 450px;
 	}
 
 	.travel-paragraph {
-		width: 500px;
+		width: 550px;
 		font-size: 26px;
-		top: -215px;
-		left: 580px;
+		top: -150px;
+		left: 500px;
 		margin: 10px;
 	}
 
-	.not-research-travel {
-		position: relative;
-		top: -20px;
-		left: 250px;
-	}
-.not-research-travel-wrapper {
-		max-width: 40%;
-		left: 520px;
+
+	.not-research-travel-wrapper {
+		max-width: 35%;
+		left: 600px;
 		top: -200px;
 	}
 
 	.prev-btn-travel,
 	.next-btn-travel {
-		font-size: 80px;
+		font-size: 150px;
 		top: -600px;
 
 	}
+
 	.prev-btn-travel {
-		left: 350px;
+		left: 450px;
 		z-index: 2;
 	}
 
 	.next-btn-travel {
-		right: -1160px;
+		right: -1095px;
 	}
 
 }
