@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+//Took out the DOMContentLoaded line
 
 	// Travel carousel
 		let travelCurrentIndex = 0;  // Separate currentIndex for travel carousel
@@ -29,4 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
             goToIndex(travelCurrentIndex + 1);
         });
 
-});
+
