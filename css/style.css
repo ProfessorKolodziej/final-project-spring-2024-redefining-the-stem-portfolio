@@ -8,7 +8,6 @@ body {
 	font-family: 'space mono';
 	margin: 0px;
 }
-
 .blue-box {
 	justify-content: center;
 	width: 375px;
@@ -17,6 +16,8 @@ body {
 	position: fixed;
 	top: -8px;
 	z-index: 1000;
+	left: 50%;
+	margin-left: -187.5px;
 }
 
 .jon-headshot-nav {
@@ -678,6 +679,7 @@ button {
 	.blue-box {
 		width: 768px;
 		height: 120px;
+		margin-left: -384px;
 	}
 
 
@@ -977,6 +979,8 @@ button {
 	.blue-box {
 		width: 250px;
 		height: 1320px;
+		left: 0%;
+		margin-left: 0px;
 	}
 
 
