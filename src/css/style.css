@@ -889,15 +889,15 @@ button {
 	.cocktail-title {
 		font-size: 30px;
 		margin-left: 20px;
-		top: 120px;
+		top: 140px;
 		width: 300px;
 	}
 
 	.cocktails-underline {
 		width: 80px;
 		transform: rotate(90deg);
-		top: 70px;
-		left: 220px;
+		top: 90px;
+		left: 150px;
 	}
 
 	.cocktails-paragraph {
@@ -905,8 +905,8 @@ button {
 		width: 450px;
 		height: 200px;
 		font-size: 24px;
-		left: 270px;
-		top: 10px;
+		left: 210px;
+		top: 30px;
 	}
 
 	.cocktail-1 {
