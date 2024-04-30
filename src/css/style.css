@@ -72,13 +72,18 @@ body {
 	left: 64px;
 }
 
-
 a:link {
 	text-decoration: none;
 }
 
 .nav-bar-text li a:visited {
 	color: #4D4F52;
+}
+
+.nav-bar-text li a.active {
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 .linkedin a:visited {
@@ -97,98 +102,249 @@ a:link {
 	color: black;
 }
 
-.current-page {
-	color: black;
-	/*ask prof why this color isn't being applied*/
-	text-decoration: underline;
-	font-weight: bold;
+.jon-headshot-links {
+	width: 100%;
+	position: relative;
+	top: 130px;
+	left: 30px;
 }
 
-.jon-headshot-links {
-	width: 90%;
-	position: relative;
-	top: 140px;
-	left: 10px;
+.external-links {
+	display: flex;
+	align-items: center;
+	max-width: 300px;
 }
 
 .all-links {
-	position: absolute;
-	top: 340px;
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	left: -200px;
+	top: 200px;
+}
+
+.resume-container:hover .line-resume,
+.resume-container:hover .short-resume {
+	border-width: 2px;
+}
+
+.resume-container:hover .line-resume::after {
+	opacity: 1;
+}
+
+.resume-container {
+	position: relative;
+	width: 150px;
+	top: -210px;
+	left: -25px;
+}
+
+.resume-container p {
+	transition: font-weight 0.3s;
+}
+
+.resume-container p:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .short-resume {
-	position: relative;
-	top: -230px;
-	left: 20px;
-	width: 200px;
 	font-size: 16px;
+	position: relative;
+	top: -65px;
+	left: -50px;
+
 }
 
 .line-resume {
 	border-top: 1px solid #000;
 	width: 50px;
 	position: relative;
-	top: -170px;
-	left: 60px;
-	transform: rotate(45deg)
+	transform: rotate(45deg);
+	top: -3px;
+	border-width: 0.3s;
+}
+
+
+.line-resume:hover {
+	border-width: 2px;
+}
+
+.line-resume::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: -10px;
+	transform: rotate(180deg);
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #000;
+	transition: border-left 0.3s;
+	opacity: 0;
+}
+
+.cv-container:hover .line-cv,
+.cv-container:hover .long-cv {
+	border-width: 2px;
+}
+
+.cv-container:hover .line-cv::after {
+	opacity: 1;
+}
+
+.cv-container {
+	width: 60px;
+	position: relative;
+	top: -210px;
+	left: 160px;
+}
+
+.cv-container p {
+	transition: font-weight 0.3s;
+}
+
+.cv-container p:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .long-cv {
-	position: relative;
-	top: -275px;
-	left: 260px;
 	width: 80px;
 	font-size: 16px;
+	position: relative;
 }
 
 .line-cv {
 	border-top: 1px solid #000;
 	width: 50px;
 	position: relative;
-	top: -210px;
-	left: 250px;
-	transform: rotate(-45deg)
+	transform: rotate(-45deg);
+	top: 60px;
+	left: -20px;
+}
+
+.line-cv::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 44px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #000;
+	transition: border-left 0.3s;
+	opacity: 0;
+}
+
+.github-container:hover .line-github,
+.github-container:hover .github {
+	border-width: 2px;
+}
+
+.github-container:hover .line-github::after {
+	opacity: 1;
+}
+
+.github-container {
+	position: relative;
+	width: 100px;
+	top: 55px;
+	left: -10px;
+}
+
+.github-container p {
+	transition: font-weight 0.3s;
+}
+
+.github-container p:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .github {
 	position: relative;
-	top: -100px;
-	left: 20px;
-	width: 200px;
 	font-size: 16px;
+	left: -30px;
 }
 
 .line-github {
 	border-top: 1px solid #000;
 	width: 50px;
 	position: relative;
-	top: -100px;
-	left: 60px;
-	transform: rotate(-45deg)
+	left: -8px;
+	top: -4px;
+	transform: rotate(-45deg);
+}
+
+.line-github::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: -10px;
+	transform: rotate(180deg);
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #000;
+	transition: border-left 0.3s;
+	opacity: 0;
+}
+
+.linkedin-container:hover .line-linkedin,
+.linkedin-container:hover .linkedin {
+	border-width: 2px;
+}
+
+.linkedin-container:hover .line-linkedin::after {
+	opacity: 1;
+}
+
+.linkedin-container {
+	position: relative;
+	width: 100px;
+	top: 110px;
+	left: 125px;
+}
+
+.linkedin-container p {
+	transition: font-weight 0.3s;
+}
+
+.linkedin-container p:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .linkedin {
 	position: relative;
-	top: -145px;
-	left: 260px;
 	width: 80px;
 	font-size: 16px;
+	left: 10px;
 }
 
 .line-linkedin {
 	border-top: 1px solid #000;
 	width: 50px;
 	position: relative;
-	top: -150px;
-	left: 250px;
-	transform: rotate(45deg)
+	transform: rotate(45deg);
+	left: 3px;
 }
+
+.line-linkedin::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 40px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #000;
+	transition: border-left 0.3s;
+	opacity: 0;
+}
+
 
 .about-desc {
 	margin: 20px;
 	position: relative;
-	top: 180px;
-
+	top: 130px;
 }
 
 /* research section*/
@@ -203,7 +359,8 @@ a:link {
 	left: 175px;
 }
 
-/*accordion*/
+/*accordion: used this tutorial
+--> https://dev.to/rajatamil/create-a-simple-accordion-menu-using-vanilla-javascript-2n90*/
 
 .research-accordion {
 	max-width: 90%;
@@ -221,6 +378,10 @@ a:link {
 	border-bottom: 2px solid #A3CBDA;
 }
 
+.accordion-item.expanded {
+	border-bottom: 2px solid #000;
+}
+
 .accordion-header {
 	display: flex;
 	flex-direction: row-reverse;
@@ -233,6 +394,21 @@ a:link {
 	font-weight: 700;
 	margin: 10px;
 	margin-left: 10px;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+}
+
+.accordion-item.expanded .accordion-title {
+	border-bottom: 2px solid black;
+}
+
+.accordion-item.expanded .accordion-content {
+	border-top: 1px solid transparent;
+}
+
+.accordion-item.expanded {
+	border-top: none;
+	border-bottom: none;
 }
 
 .arrow-up {
@@ -254,7 +430,8 @@ a:link {
 	background-color: white;
 }
 
-/* research carousel*/
+/* research carousel: used a mixture of reddit, youtube, and chatgpt to build/troubleshoot
+I asked chatgpt: "How can I make a simple carousel using vanilla javascript?*/
 
 .areas-research-carousel {
 	width: 100%;
@@ -305,6 +482,10 @@ a:link {
 	display: block;
 }
 
+.bold-style {
+	font-weight: bold;
+}
+
 button {
 	position: absolute;
 	top: 13%;
@@ -324,7 +505,7 @@ button {
 	right: -6px;
 }
 
-.content ol {
+.carousel-ol {
 	list-style: none;
 	padding: 10px;
 	font-size: 16px;
@@ -336,7 +517,6 @@ button {
 
 .content h3 {
 	width: 220px;
-	font-size: 16px;
 }
 
 .content p {
@@ -344,8 +524,39 @@ button {
 	font-size: 16px;
 }
 
-/* not research section: ask why do I have to reload for each media query
-to get the right dimensions for slider.*/
+.papers-subsection {
+	font-size: 16px;
+}
+
+.number-icons {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.number-icons li {
+	counter-increment: my-counter;
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: 20px;
+}
+
+.number-icons li::before {
+	content: counter(my-counter);
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #E2EEF3;
+	border-radius: 50%;
+	margin-right: 10px;
+	left: -30px;
+	top: 10px;
+}
+
+
+/* not research section*/
 .dot-nav-not-research {
 	width: 8px;
 	height: 8px;
@@ -462,7 +673,6 @@ to get the right dimensions for slider.*/
 	right: -280px;
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
 	.blue-box {
@@ -510,64 +720,87 @@ to get the right dimensions for slider.*/
 		top: -55px;
 	}
 
-	.about-desc {
-		font-size: 24px;
+	.jon-headshot-links {
+		top: 160px;
+	}
+
+	.external-links {
+		max-width: 700px;
 	}
 
 	.all-links {
-		top: 580px;
-		left: 20px;
+		left: -400px;
 	}
 
-	.jon-headshot-links {
-		left: 40px;
+	.resume-container {
+		top: -320px;
+		left: -110px;
 	}
 
 	.short-resume {
-		top: -450px;
-		left: 50px;
 		font-size: 24px;
+		width: 200px;
+		top: -90px;
+		left: -70px;
 	}
 
 	.line-resume {
-		top: -370px;
-		left: 150px;
+		width: 70px;
+	}
+
+	.cv-container {
+		top: -300px;
+		left: 216px;
 	}
 
 	.long-cv {
-		top: -510px;
-		left: 540px;
 		font-size: 24px;
 		width: 120px;
+		top: -26px;
 	}
 
 	.line-cv {
-		top: -430px;
-		left: 530px;
+		width: 70px;
+	}
+
+	.line-cv::after {
+		left: 60px;
+	}
+
+	.github-container {
+		top: 180px;
+		left: -100px;
 	}
 
 	.github {
-		left: 100px;
-		top: -240px;
 		font-size: 24px;
 	}
 
 	.line-github {
-		top: -230px;
-		left: 150px;
+		width: 70px;
+	}
+
+
+	.linkedin-container {
+		top: 270px;
+		left: 185px;
 	}
 
 	.linkedin {
-		top: -320px;
-		left: 500px;
 		font-size: 24px;
 	}
 
 	.line-linkedin {
-		top: -320px;
-		left: 500px;
+		width: 70px;
 	}
 
+	.line-linkedin::after {
+		left: 60px;
+	}
+
+	.about-desc {
+		font-size: 24px;
+	}
 
 	/*research section accordion */
 
@@ -602,17 +835,6 @@ to get the right dimensions for slider.*/
 		font-size: 26px;
 	}
 
-	.content ol,
-	.content p {
-		font-size: 24px;
-	}
-
-	.content h3 {
-		font-size: 24px;
-		width: 600px;
-	}
-
-
 	button {
 		top: 13%;
 		font-size: 140px;
@@ -625,6 +847,36 @@ to get the right dimensions for slider.*/
 	#next {
 		right: 40px;
 	}
+
+	.content p {
+		font-size: 24px;
+	}
+
+	.content-ol {
+		font-size: 24px;
+	}
+
+	.content h3 {
+		width: 600px;
+		font-size: 24px;
+	}
+
+	.papers-subsection {
+		font-size: 24px;
+	}
+
+	.number-icons li {
+		font-size: 24px;
+		margin-left: 25px;
+	}
+
+	.number-icons li::before {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		left: -40px;
+	}
+
 
 	/*not research section */
 	.dot-nav-not-research {
@@ -720,15 +972,11 @@ to get the right dimensions for slider.*/
 
 }
 
-/*ask about this media query and why there is so much extra space when
-in laptop mode. Also who is it cut off in 1023. What size should my query be
-and why isn't a larger query working?*/
-
 @media screen and (min-width: 1023px) {
 
 	.blue-box {
 		width: 250px;
-		height: 1250px;
+		height: 1320px;
 	}
 
 
@@ -764,7 +1012,6 @@ and why isn't a larger query working?*/
 		left: -95px;
 		top: 220px;
 		transform: rotate(90deg);
-
 	}
 
 	.dot-nav-about {
@@ -774,58 +1021,67 @@ and why isn't a larger query working?*/
 		top: 120px;
 	}
 
-	.about-desc {
-		position: relative;
-		top: -1600px;
-		padding-left: 280px;
-		font-size: 26px;
-	}
 
 	.jon-headshot-links {
-		width: 50%;
-		left: 460px;
-		top: 30px;
+		left: 300px;
 	}
 
-	.all-links {
-		top: 200px;
-		left: 760px;
+	.external-links {
+		max-width: 900px;
+	}
+
+	.resume-container {
+		top: -430px;
+		left: -160px;
 	}
 
 	.short-resume {
 		font-size: 26px;
 		width: 300px;
-		left: -280px;
-		top: -210px;
+		top: -100px;
+		left: -80px;
 	}
 
 	.line-resume {
 		width: 80px;
-		top: -100px;
-		left: -160px;
+	}
+
+	.cv-container {
+		top: -395px;
+		left: 210px;
 	}
 
 	.long-cv {
 		font-size: 26px;
 		width: 300px;
-		top: -320px;
+		top: -40px;
 	}
 
 	.line-cv {
-		left: 200px;
 		width: 80px;
+	}
+
+	.line-cv::after {
+		top: -6px;
+		left: 78px;
+	}
+
+	.github-container {
+		top: 210px;
+		left: -160px;
 	}
 
 	.github {
 		font-size: 26px;
-		top: -28px;
-		left: -210px;
 	}
 
 	.line-github {
 		width: 80px;
-		top: -30px;
-		left: -190px;
+	}
+
+	.linkedin-container {
+		top: 290px;
+		left: 195px;
 	}
 
 	.linkedin {
@@ -836,8 +1092,18 @@ and why isn't a larger query working?*/
 		width: 80px;
 	}
 
+	.line-linkedin::after {
+		top: -6px;
+		left: 80px;
+	}
+
 	.about-desc {
-		top: 20px;
+		position: relative;
+		top: 100px;
+		left: 300px;
+		font-size: 26px;
+		max-width: 900px;
+		margin: 10px 10px 30px 10px;
 	}
 
 	/*research section */
@@ -876,16 +1142,27 @@ and why isn't a larger query working?*/
 		font-size: 30px;
 	}
 
-	.content ol,
+
 	.content p {
 		font-size: 26px;
 		width: 600px;
 	}
 
-	.content h3 {
+	.content ol {
 		font-size: 26px;
-		width: 600px;
 	}
+
+	.content h3 {
+		width: 600px;
+		font-size: 26px;
+
+	}
+
+	.papers-subsection {
+		font-size: 26px;
+	}
+
+
 
 	button {
 
@@ -899,6 +1176,18 @@ and why isn't a larger query working?*/
 
 	#next {
 		right: 140px;
+	}
+
+	.number-icons li {
+		font-size: 26px;
+		margin-left: 50px;
+	}
+
+	.number-icons li::before {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		left: -53px;
 	}
 
 	/*not research section */
@@ -982,13 +1271,13 @@ and why isn't a larger query working?*/
 	.not-research-travel-wrapper {
 		max-width: 35%;
 		left: 600px;
-		top: -200px;
+		top: -100px;
 	}
 
 	.prev-btn-travel,
 	.next-btn-travel {
 		font-size: 150px;
-		top: -600px;
+		top: -400px;
 
 	}
 
